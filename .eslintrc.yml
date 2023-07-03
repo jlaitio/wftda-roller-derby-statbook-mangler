@@ -1,0 +1,39 @@
+env:
+  es6: true
+  node: true
+  mocha: true
+  jest/globals: true
+extends:
+  - eslint:recommended
+rules:
+  linebreak-style:
+    - error
+    - unix
+  no-throw-literal:
+    - error
+  no-console:
+    - off
+  no-template-curly-in-string:
+    - warn
+  array-callback-return:
+    - warn
+  no-extra-bind:
+    - warn
+plugins:
+  - jest
+ignorePatterns:
+  - '**/dist/*.js'
+  - '**/dist/*.ts'
+  - files: ['*.ts']
+    parser: '@typescript-eslint/parser'
+    plugins:
+      - '@typescript-eslint'
+      - prettier
+    extends:
+      - plugin:@typescript-eslint/eslint-recommended
+      - plugin:@typescript-eslint/recommended
+      - prettier
+    rules:
+      prettier/prettier:
+        - error
+      no-undef: error

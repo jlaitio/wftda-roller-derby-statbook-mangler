@@ -1,0 +1,6 @@
+.DS_Store
+output.json
+config/config.json
+data/*
+data_other/*
+node_modules

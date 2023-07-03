@@ -1,0 +1,9 @@
+{
+    "numberAdjustmentMapping": [
+        {
+            "team": "Derby Town Derby",
+            "rawNumber": "234",
+            "realNumber": "123"
+        }
+    ]
+}
